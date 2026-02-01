@@ -1,0 +1,11 @@
+.layout {
+    max-width: 1440px;
+    padding: 2%;
+    display: flexbox;
+    margin: auto; /* TODO: why is this not working  */
+}
+
+.container {
+    margin: 40px 40px 0 40px;
+    display: flexbox;
+}
