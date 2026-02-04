@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Meeting Scheduler</title>
+    <link rel="stylesheet" href="./css/lab4_starter.css" />
+    <link rel="stylesheet" href="./css/lab4.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Scheduler</h1>
+    </header>
+
+    <div class="container">
+      <table class="calendar" aria-label="January 2025">
+        <caption>
+          January 2025
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td id="today">20</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="form-container">
+        <h2>Meeting Details</h2>
+
+        <form
+          id="form"
+          method="post"
+          action="http://www.randyconnolly.com/tests/process.php"
+          novalidate>
+          <div class="form-name form-group">
+            <div>
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter first name"
+                required />
+            </div>
+
+            <div>
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter last name"
+                required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>
+              First Meeting?
+              <input type="checkbox" id="first" name="first" />
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Career</label>
+            <label
+              ><input type="radio" name="career" value="student" />
+              Student</label
+            >
+            <label
+              ><input type="radio" name="career" value="employee" />
+              Employee</label
+            >
+            <label
+              ><input type="radio" name="career" value="business" /> Business
+              owner</label
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="preference">Meeting Preference</label>
+
+            <select class="select" id="preference" name="preference" required>
+              <option id="zoom" value="">Select an option</option>
+              <option id="zoom" value="zoom">Zoom</option>
+              <option id="google-meet" value="google-meet">Google meet</option>
+              <option id="teams" value="teams">Microsoft Teams</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="meetingDate">Meeting Date:</label>
+            <input type="date" id="meetingDate" required />
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="submit">Submit</button>
+            <button type="reset" class="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./scripts/lab4-2.js"></script>
+    <script src="./scripts/lab4-1.js"></script>
+  </body>
+</html>
